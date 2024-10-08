@@ -1,0 +1,44 @@
+<!-- Created By: Cole Chiodo -->
+<!-- ID: 922775344 -->
+<!-- GitHub: ColeChiodo -->
+
+<head>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            margin: 0;
+            padding: 0;
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <div style="display: flex; align-items: center; justify-content: center;">
+        <div style="position: relative; display: inline-block; align-items: center;">
+            <div style="position: absolute; display: flex; width: 100%; align-items: center; padding: 20px;">
+                <div style="position: relative; height: 30px; width: 100%;">
+                    <div style="background-color: gray; height: 30px;"></div>
+                    <div id="p1health" style="position: absolute; background-color: navy; top: 0; bottom: 0; left: 0; right: 0;"></div>
+                    <div id="p1name" style="position: absolute; color: white; top: 0; bottom: 0; left: 0; right: 10; display: flex; align-items: center; justify-content: right; color: black;"></div>
+                </div>
+    
+                <div id="timer" style="font-size: x-large; background-color: white; height: 50px; width: 100px; flex-shrink: 0; display: flex; align-items: center; justify-content: center; border-radius: 5px;">
+                    99
+                </div>
+                
+                <div style="position: relative; height: 30px; width: 100%;">
+                    <div style="background-color: gray; height: 30px;"></div>
+                    <div id="p2health" style="position: absolute; background-color: navy; top: 0; bottom: 0; left: 0; right: 0;"></div>
+                    <div id="p2name" style="position: absolute; color: white; top: 0; bottom: 0; left: 10; right: 0; display: flex; align-items: center; justify-content: left; color: black;"></div>
+                </div>
+            </div>
+            <div id="resultText" style="font-size: xx-large; position: absolute; color: white; align-items: center; justify-content: center; top: 0; bottom: 0; left: 0; right: 0; display: none;">TIE</div>
+            <canvas></canvas>
+        </div>
+    </div>
+    <script src="scripts/classes.js"></script>
+    <script src="scripts/utils.js"></script>
+    <script src="scripts/FightingGame.js"></script>
+</body>
